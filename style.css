@@ -1,0 +1,45 @@
+body {
+    width: 720px;
+    margin: 20px auto;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 15px;
+}
+
+h3 {
+    font-size: 35px;
+    padding: 10px;
+}
+
+button {
+    border-radius: 5px 5px 0 0;
+    border: none;
+    margin: 0px 10px 0 0;
+    background-color: burlywood;
+}
+
+#content {
+    background-color: burlywood;
+    margin: 0;
+}
+
+.imgMainPage {
+    width: 100%;
+}
+
+.pictureContainer {
+    background-image: url("img/bacon-strips.jpg");
+    background-size: cover;
+    margin: 40px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.punchlines {
+    font-size: 50px;
+    color:antiquewhite;
+    margin-bottom: 50px;
+}
