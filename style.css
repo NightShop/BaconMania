@@ -1,0 +1,113 @@
+body {
+    width: 720px;
+    margin: 20px auto;
+    background-color: rgb(165, 77, 42);
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 15px;
+    line-height: 120%;
+}
+
+h3 {
+    font-size: 35px;
+    padding: 15px;
+}
+
+h4 {
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+button {
+    border-radius: 5px 5px 0 0;
+    border: none;
+    margin: 0px 10px 0 0;
+    background-color: burlywood;
+    padding: 5px;
+    padding-bottom: 0;
+}
+
+button:hover {
+    border: solid 2px rgb(172, 143, 106);
+    border-bottom: none;
+    padding: 3px;
+    padding-bottom: 0;
+    
+
+}
+
+button.active {
+    background-color: rgb(172, 143, 106);
+}
+
+#content {
+    background-color: burlywood;
+    margin: 0;
+}
+
+.imgMainPage {
+    width: 100%;
+}
+
+.pictureContainer {
+    background-image: url("img/bacon-strips.jpg");
+    background-size: cover;
+    margin: 10px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.punchlines {
+    font-size: 50px;
+    color:antiquewhite;
+    margin-bottom: 50px;
+}
+
+.punchlines:nth-last-child(2) {
+    text-decoration: underline;
+}
+
+.footprint {
+    color: antiquewhite;
+    font-weight: 800;
+}
+
+.addressDiv {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.contactInfo {
+    line-height: 50px;
+}
+
+.itemPic {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 5%;
+    margin: 15px;
+}
+
+.singleItem {
+    height:400px;
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    border-bottom: solid 1px brown;
+}
+
+.singleItem p {
+    margin: 8px;
+}
+
+.singleItem:last-of-type {
+    border-bottom: none;
+}
