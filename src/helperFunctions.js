@@ -24,4 +24,14 @@ function addToPage (node) {
     content.appendChild(node);
 }
 
-export {createTextNode, createImage, addToPage}
+function deleteContent () {
+    let content = document.querySelector("#content");
+    const body = document.querySelector("body");
+    const newContent = body.removeChild(content);
+    content = document.createElement("div");
+    content.setAttribute("id", "content");
+    body.appendChild(content);
+    return content;
+}
+
+export {createTextNode, createImage, addToPage, deleteContent}

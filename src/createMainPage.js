@@ -1,9 +1,13 @@
-import {createImage, createTextNode, addToPage} from "./helperFunctions.js"
+import {createImage, createTextNode, addToPage, deleteContent} from "./helperFunctions.js"
 
 function createMainPage() {
-    const content = document.querySelector("#content");
+    const content = deleteContent();
 
+    const allButtons = document.querySelectorAll("button");
+    allButtons.forEach(button => button.classList.remove("active"));
 
+    const homeButton = document.querySelector(".homeButton");
+    homeButton.classList.add("active");
 
     const title = createTextNode("h3", "We care about one thing...");
     addToPage(title);
@@ -12,20 +16,20 @@ function createMainPage() {
     pictureContainer.classList.add("pictureContainer");
     content.appendChild(pictureContainer);
 
-    let punchlineOne = createTextNode("p", `"Sizzling"...`, "punchlines");
+    let punchlineOne = createTextNode("p", `Sizzling..`, "punchlines");
     pictureContainer.appendChild(punchlineOne);
-    let punchlineTwo = createTextNode("p", `..."Crispy"...`, "punchlines");
+    let punchlineTwo = createTextNode("p", `..Crispy..`, "punchlines");
     pictureContainer.appendChild(punchlineTwo);
-    let punchlineThree = createTextNode("p", `"Golden brown",`, "punchlines");
+    let punchlineThree = createTextNode("p", `..Golden brown..`, "punchlines");
     pictureContainer.appendChild(punchlineThree);
-    let punchlineFour = createTextNode("p", `"Salty",`, "punchlines");
+    let punchlineFour = createTextNode("p", `..Salty..`, "punchlines");
     pictureContainer.appendChild(punchlineFour);
-    let punchlineFive = createTextNode("p", `"Fatty"`, "punchlines");
+    let punchlineFive = createTextNode("p", `..Fatty..`, "punchlines");
     pictureContainer.appendChild(punchlineFive);
-    let punchlineSix = createTextNode("p", `"Bacon"`, "punchlines");
+    let punchlineSix = createTextNode("p", `BACON`, "punchlines");
     pictureContainer.appendChild(punchlineSix);
 
-    let textContainer = createTextNode("p", "It's simple. We care about only one thing. Crispy, salty, greasy golden-brown bacon.")
+    let textContainer = createTextNode("p", "And that, toped with chedar.", "footprint")
     pictureContainer.appendChild(textContainer);
 
 
