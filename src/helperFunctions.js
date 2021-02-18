@@ -9,7 +9,7 @@ function createTextNode(tag, nodeText, nodeClass) {
 }
 
 function createImage(imageName, nodeClass = "") {
-    const imageLink = "../img/" + imageName;
+    const imageLink = "img/" + imageName;
 
     const newNode = document.createElement("img");
     if (nodeClass != "") {
